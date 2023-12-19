@@ -1,0 +1,4 @@
+**.d.ts
+/packages/or-ui
+dist
+node_modules
