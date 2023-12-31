@@ -3,6 +3,6 @@ import run from '../utils/run';
 import { pkgPath } from '../utils/paths';
 import { series } from 'gulp';
 export const publishComponent = async () => {
-  run('release-it', `${pkgPath}/orangeui`);
+  run('release-it', `${pkgPath}/vorangeui`);
 };
 export default series(async () => publishComponent());

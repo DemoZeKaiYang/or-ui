@@ -6,7 +6,7 @@ import autoprefixer from 'gulp-autoprefixer';
 import run from '../utils/run';
 
 export const removeDist = () => {
-  return delPath(`${pkgPath}/orangeui`);
+  return delPath(`${pkgPath}/vorangeui`);
 };
 
 //打包样式
@@ -14,8 +14,8 @@ export const buildStyle = () => {
   return src(`${componentPath}/src/**/style/**.less`)
     .pipe(less())
     .pipe(autoprefixer())
-    .pipe(dest(`${pkgPath}/orangeui/lib/src`))
-    .pipe(dest(`${pkgPath}/orangeui/es/src`));
+    .pipe(dest(`${pkgPath}/vorangeui/lib/src`))
+    .pipe(dest(`${pkgPath}/vorangeui/es/src`));
 };
 
 //打包组件

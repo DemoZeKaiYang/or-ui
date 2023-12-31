@@ -24,7 +24,7 @@ const delPath = async (path: string) => {
       }
     });
 
-    if (path != `${pkgPath}/orangeui`) fs.rmdirSync(path);
+    if (path != `${pkgPath}/vorangeui`) fs.rmdirSync(path);
   }
 };
 export default delPath;

@@ -1,6 +1,6 @@
 {
-  "name": "@or-ui/orangeui",
-  "version": "1.0.1",
+  "name": "vorangeui",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "module": "es/index.mjs",
   "files": [

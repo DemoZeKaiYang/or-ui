@@ -17,6 +17,6 @@
     "vue": "^3.2.36"
   },
   "dependencies": {
-    "@or-ui/orangeui": "workspace:^"
+    "vorangeui": "workspace:^"
   }
 }
