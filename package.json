@@ -15,7 +15,8 @@
     "lint:style": "stylelint --fix \"packages/components/src/**/*.{css,less}\"",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "build:or": "gulp -f packages/components/script/build/index.ts"
+    "build:or": "gulp -f packages/components/script/build/index.ts",
+    "publish:or": "gulp -f packages/components/script/publish/index.ts"
   },
   "keywords": [],
   "author": "zekaiyang",
@@ -45,6 +46,7 @@
     "postcss": "^8.4.32",
     "postcss-less": "^6.0.0",
     "prettier": "^2.8.4",
+    "release-it": "^17.0.1",
     "stylelint": "^15.2.0",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recess-order": "^4.0.0",
