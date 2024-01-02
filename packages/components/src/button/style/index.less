@@ -1,3 +1,5 @@
+@import url(../../style/common/index.less);
+@import url(../../style//mixin/_button.less);
 .or-button {
   box-sizing: border-box;
   display: inline-block;
@@ -16,16 +18,69 @@
   outline: none;
   transition: 0.1s;
   appearance: none;
+  &.or-button--mini {
+    padding: 7px 15px;
+    font-size: 12px;
+  }
+  &.or-button--small {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  &.or-button--medium {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  &.or-button--large {
+    padding: 18px 26px;
+    font-size: 20px;
+  }
+  &[class*='or-icon-'] + span {
+    margin-left: 5px;
+  }
 }
 
-.or-button.or-button-primary {
-  color: #fff;
-  background-color: #409eff;
-  border-color: #409eff;
+.or-button.or-button--primary {
+  .button-type(@--color-primary);
+}
 
-  &:hover {
-    color: #fff;
-    background: #66b1ff;
-    border-color: #66b1ff;
-  }
+//根据不同的类型传递不同的颜色来制定不同的朴素按钮
+.or-button.is-plain {
+  .button-plain(#000);
+}
+.or-button--primary.is-plain {
+  .button-plain(@--color-primary);
+}
+.or-button-info.is-plain.is-plain {
+  .button-plain(@--color-success);
+}
+.or-button--warning.is-plain {
+  .button-plain(@--color-warning);
+}
+.or-button--danger.is-plain {
+  .button-plain(@--color-danger);
+}
+.or-button--info.is-plain {
+  .button-plain(@--color-info);
+}
+
+// .is-disabled {
+//   opacity: 0.3;
+//   &:hover {
+//     cursor: not-allowed;
+//   }
+// }
+
+//后续需要对大小重新计算，先这样实现
+.is-round {
+  border-radius: 20px;
+}
+
+.is-circle {
+  // border-radius: 50%;
+  width: 50px; /* 宽度和高度相等，形成圆形 */
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
 }

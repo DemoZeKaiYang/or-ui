@@ -1,0 +1,302 @@
+@font-face {
+  font-family: 'iconfont'; /* Project id 4396604 */
+  src: url('iconfont.woff2?t=1704198216236') format('woff2'),
+    url('iconfont.woff?t=1704198216236') format('woff'),
+    url('iconfont.ttf?t=1704198216236') format('truetype');
+}
+
+[class*='or-icon'] {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.or-icon-add-location:before {
+  content: '\e634';
+}
+
+.or-icon-aim:before {
+  content: '\e635';
+}
+
+.or-icon-back:before {
+  content: '\e636';
+}
+
+.or-icon-arrow-left:before {
+  content: '\e637';
+}
+
+.or-icon-attract:before {
+  content: '\e638';
+}
+
+.or-icon-arrow-right:before {
+  content: '\e639';
+}
+
+.or-icon-arrow-up:before {
+  content: '\e63a';
+}
+
+.or-icon-alarm-clock:before {
+  content: '\e63b';
+}
+
+.or-icon-arrow-down:before {
+  content: '\e63c';
+}
+
+.or-icon-apple:before {
+  content: '\e63d';
+}
+
+.or-icon-bangzhu:before {
+  content: '\e63e';
+}
+
+.or-icon-bell:before {
+  content: '\e63f';
+}
+
+.or-icon-bottom-right:before {
+  content: '\e640';
+}
+
+.or-icon-box:before {
+  content: '\e641';
+}
+
+.or-icon-brush:before {
+  content: '\e642';
+}
+
+.or-icon-bank-card:before {
+  content: '\e643';
+}
+
+.or-icon-bottom-left:before {
+  content: '\e644';
+}
+
+.or-icon-bicycle:before {
+  content: '\e645';
+}
+
+.or-icon-baseball:before {
+  content: '\e646';
+}
+
+.or-icon-caret-left:before {
+  content: '\e647';
+}
+
+.or-icon-camera-solid:before {
+  content: '\e648';
+}
+
+.or-icon-caret-right:before {
+  content: '\e649';
+}
+
+.or-icon-caret-top:before {
+  content: '\e64a';
+}
+
+.or-icon-caret-bottom:before {
+  content: '\e64b';
+}
+
+.or-icon-basketball:before {
+  content: '\e64c';
+}
+
+.or-icon-burger:before {
+  content: '\e64d';
+}
+
+.or-icon-bottom:before {
+  content: '\e64e';
+}
+
+.or-icon-c-scale-to-original:before {
+  content: '\e64f';
+}
+
+.or-icon-camera:before {
+  content: '\e650';
+}
+
+.or-icon-chat-dot-round:before {
+  content: '\e651';
+}
+
+.or-icon-check:before {
+  content: '\e652';
+}
+
+.or-icon-chat-line-square:before {
+  content: '\e653';
+}
+
+.or-icon-chat-round:before {
+  content: '\e654';
+}
+
+.or-icon-chat-dot-square:before {
+  content: '\e655';
+}
+
+.or-icon-chat-line-round:before {
+  content: '\e656';
+}
+
+.or-icon-chat-square:before {
+  content: '\e657';
+}
+
+.or-icon-circle-check:before {
+  content: '\e658';
+}
+
+.or-icon-circle-close:before {
+  content: '\e659';
+}
+
+.or-icon-chicken:before {
+  content: '\e65a';
+}
+
+.or-icon-circle-plus-outline:before {
+  content: '\e65b';
+}
+
+.or-icon-circle-plus:before {
+  content: '\e65c';
+}
+
+.or-icon-close-notification:before {
+  content: '\e65d';
+}
+
+.or-icon-close:before {
+  content: '\e65e';
+}
+
+.or-icon-cloudy-and-sunny:before {
+  content: '\e65f';
+}
+
+.or-icon-cherry:before {
+  content: '\e660';
+}
+
+.or-icon-coffee-cup:before {
+  content: '\e661';
+}
+
+.or-icon-cloudy:before {
+  content: '\e662';
+}
+
+.or-icon-collection-tag:before {
+  content: '\e663';
+}
+
+.or-icon-cold-drink:before {
+  content: '\e664';
+}
+
+.or-icon-collection:before {
+  content: '\e665';
+}
+
+.or-icon-coordinate:before {
+  content: '\e666';
+}
+
+.or-icon-connection:before {
+  content: '\e667';
+}
+
+.or-icon-crop:before {
+  content: '\e668';
+}
+
+.or-icon-cpu:before {
+  content: '\e669';
+}
+
+.or-icon-copy-document:before {
+  content: '\e66a';
+}
+
+.or-icon-d-caret:before {
+  content: '\e66b';
+}
+
+.or-icon-d-arrow-right:before {
+  content: '\e66c';
+}
+
+.or-icon-data-board:before {
+  content: '\e66d';
+}
+
+.or-icon-data-analysis:before {
+  content: '\e66e';
+}
+
+.or-icon-data-line:before {
+  content: '\e66f';
+}
+
+.or-icon-d-arrow-left:before {
+  content: '\e670';
+}
+
+.or-icon-delete-solid:before {
+  content: '\e671';
+}
+
+.or-icon-delete-location:before {
+  content: '\e672';
+}
+
+.or-icon-discount:before {
+  content: '\e673';
+}
+
+.or-icon-date:before {
+  content: '\e674';
+}
+
+.or-icon-dessert:before {
+  content: '\e675';
+}
+
+.or-icon-dish:before {
+  content: '\e676';
+}
+
+.or-icon-delete:before {
+  content: '\e677';
+}
+
+.or-icon-document-copy:before {
+  content: '\e678';
+}
+
+.or-icon-document:before {
+  content: '\e679';
+}
+
+.or-icon-discover:before {
+  content: '\e67a';
+}
+
+.or-icon-document-add:before {
+  content: '\e67b';
+}

@@ -1,11 +1,15 @@
 <template>
-  <div>我是专门用来测试组件库的vue</div>
-  <Button type="primary">我是测试按钮</Button>
-  <Icon></Icon>
+  <OrButton type="primary" @click="testFunction" size="large" plain
+    >我1231231231232<i class="or-icon-back"></i
+  ></OrButton>
 </template>
 
 <script setup lang="ts">
-import { Button, Icon } from '@or-ui/components';
+import { OrButton, Icon } from '@or-ui/components'
+
+const testFunction = () => {
+  console.log(1)
+}
 </script>
 
 <style></style>

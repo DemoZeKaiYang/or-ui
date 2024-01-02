@@ -1,5 +1,5 @@
 import _Icon from './icon.vue';
-// import { withInstall } from '../../../utils/withinstall/index';
+
 import type { App, Plugin } from 'vue';
 type SFCWithInstall<T> = T & Plugin;
 const withInstall = <T>(comp: T) => {

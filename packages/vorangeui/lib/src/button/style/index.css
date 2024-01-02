@@ -19,13 +19,179 @@
      -moz-appearance: none;
           appearance: none;
 }
-.or-button.or-button-primary {
+.or-button.or-button--mini {
+  padding: 7px 15px;
+  font-size: 12px;
+}
+.or-button.or-button--small {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+.or-button.or-button--medium {
+  padding: 10px 20px;
+  font-size: 14px;
+}
+.or-button.or-button--large {
+  padding: 18px 26px;
+  font-size: 20px;
+}
+.or-button.or-button--primary {
   color: #fff;
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+}
+.or-button.or-button--primary:hover,
+.or-button.or-button--primary:focus,
+.or-button.or-button--primary:active {
+  opacity: 0.7;
+}
+.or-button.is-plain {
+  color: #000;
+  background: #ffffff;
+  border-color: #ffffff;
+  border: 1px solid #000;
+}
+.or-button.is-plain:hover,
+.or-button.is-plain:focus {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+.or-button.is-plain:active {
+  background-color: #000000;
+  border-color: #000000;
+  color: #fff;
+}
+.or-button.is-plain.is-disabled {
+  color: #666666;
+  background-color: #e6e6e6;
+  border-color: #cccccc;
+  cursor: not-allowed;
+}
+.or-button--primary.is-plain {
+  color: #e6a23c;
+  background: #ffffff;
+  border-color: #ffffff;
+  border: 1px solid #e6a23c;
+}
+.or-button--primary.is-plain:hover,
+.or-button--primary.is-plain:focus {
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+  color: #fff;
+}
+.or-button--primary.is-plain:active {
+  background-color: #d48a1b;
+  border-color: #d48a1b;
+  color: #fff;
+}
+.or-button--primary.is-plain.is-disabled {
+  color: #f0c78a;
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+  cursor: not-allowed;
+}
+.or-button-info.is-plain.is-plain {
+  color: #67c23a;
+  background: #ffffff;
+  border-color: #ffffff;
+  border: 1px solid #67c23a;
+}
+.or-button-info.is-plain.is-plain:hover,
+.or-button-info.is-plain.is-plain:focus {
+  background-color: #67c23a;
+  border-color: #67c23a;
+  color: #fff;
+}
+.or-button-info.is-plain.is-plain:active {
+  background-color: #529b2e;
+  border-color: #529b2e;
+  color: #fff;
+}
+.or-button-info.is-plain.is-plain.is-disabled {
+  color: #a4da89;
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+  cursor: not-allowed;
+}
+.or-button--warning.is-plain {
+  color: #409eff;
+  background: #ffffff;
+  border-color: #ffffff;
+  border: 1px solid #409eff;
+}
+.or-button--warning.is-plain:hover,
+.or-button--warning.is-plain:focus {
   background-color: #409eff;
   border-color: #409eff;
-}
-.or-button.or-button-primary:hover {
   color: #fff;
-  background: #66b1ff;
-  border-color: #66b1ff;
+}
+.or-button--warning.is-plain:active {
+  background-color: #0d84ff;
+  border-color: #0d84ff;
+  color: #fff;
+}
+.or-button--warning.is-plain.is-disabled {
+  color: #8cc5ff;
+  background-color: #ecf5ff;
+  border-color: #d9ecff;
+  cursor: not-allowed;
+}
+.or-button--danger.is-plain {
+  color: #f56c6c;
+  background: #ffffff;
+  border-color: #ffffff;
+  border: 1px solid #f56c6c;
+}
+.or-button--danger.is-plain:hover,
+.or-button--danger.is-plain:focus {
+  background-color: #f56c6c;
+  border-color: #f56c6c;
+  color: #fff;
+}
+.or-button--danger.is-plain:active {
+  background-color: #f23c3c;
+  border-color: #f23c3c;
+  color: #fff;
+}
+.or-button--danger.is-plain.is-disabled {
+  color: #f9a7a7;
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+  cursor: not-allowed;
+}
+.or-button--info.is-plain {
+  color: #909399;
+  background: #ffffff;
+  border-color: #ffffff;
+  border: 1px solid #909399;
+}
+.or-button--info.is-plain:hover,
+.or-button--info.is-plain:focus {
+  background-color: #909399;
+  border-color: #909399;
+  color: #fff;
+}
+.or-button--info.is-plain:active {
+  background-color: #767980;
+  border-color: #767980;
+  color: #fff;
+}
+.or-button--info.is-plain.is-disabled {
+  color: #bcbec2;
+  background-color: #f4f4f5;
+  border-color: #e9e9eb;
+  cursor: not-allowed;
+}
+.is-round {
+  border-radius: 20px;
+}
+.is-circle {
+  width: 50px;
+  /* 宽度和高度相等，形成圆形 */
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
 }
