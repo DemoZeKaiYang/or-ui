@@ -16,7 +16,11 @@
     :disabled="buttonProps.disabled"
     :autofocus="buttonProps.autofocus"
   >
-    <i v-if="buttonProps.icon" :class="`or-icon-${icon}`"></i>
+    <i
+      v-if="buttonProps.icon"
+      :class="`or-icon-${icon}`"
+      style="font-size: 16px"
+    ></i>
     <span v-if="$slots.default"><slot></slot></span>
   </button>
 </template>

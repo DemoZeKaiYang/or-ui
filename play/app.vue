@@ -1,7 +1,9 @@
 <template>
-  <OrButton type="primary" @click="testFunction" size="large" plain
-    >我1231231231232<i class="or-icon-back"></i
-  ></OrButton>
+  <or-button icon="back" plain disabled type="primary"
+    ><i class="or-icon-back"></i
+  ></or-button>
+  <or-button disabled type="success">123123</or-button>
+  <or-button disabled circle @click="testFunction">123</or-button>
 </template>
 
 <script setup lang="ts">

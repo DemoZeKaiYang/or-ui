@@ -40,4 +40,4 @@ export default {
       { icon: 'github', link: 'https://github.com/DemoZeKaiYang/or-ui' }
     ]
   }
-};
+}

@@ -42,6 +42,18 @@
 .or-button.or-button--primary {
   .button-type(@--color-primary);
 }
+.or-button.or-button--success {
+  .button-type(@--color-success);
+}
+.or-button.or-button--warning {
+  .button-type(@--color-warning);
+}
+.or-button.or-button--danger {
+  .button-type(@--color-danger);
+}
+.or-button.or-button--info {
+  .button-type(@--color-info);
+}
 
 //根据不同的类型传递不同的颜色来制定不同的朴素按钮
 .or-button.is-plain {
@@ -50,7 +62,7 @@
 .or-button--primary.is-plain {
   .button-plain(@--color-primary);
 }
-.or-button-info.is-plain.is-plain {
+.or-button--success.is-plain {
   .button-plain(@--color-success);
 }
 .or-button--warning.is-plain {
@@ -63,12 +75,12 @@
   .button-plain(@--color-info);
 }
 
-// .is-disabled {
-//   opacity: 0.3;
-//   &:hover {
-//     cursor: not-allowed;
-//   }
-// }
+.is-disabled {
+  opacity: 0.6;
+  &:hover {
+    cursor: not-allowed;
+  }
+}
 
 //后续需要对大小重新计算，先这样实现
 .is-round {

@@ -22,10 +22,17 @@ export const buildStyle = () => {
 export const buildComponent = async () => {
   run('pnpm run build', componentPath)
 }
+
+export const buildFont = async () => {
+  return src(`${componentPath}/assets/font/**`)
+    .pipe(dest(`${pkgPath}/vorangeui/lib/assets/font`))
+    .pipe(dest(`${pkgPath}/vorangeui/es/assets/font`))
+}
 export default series(
   async () => removeDist(),
   parallel(
     async () => buildStyle(),
+    async () => buildFont(),
     async () => buildComponent()
   )
 )

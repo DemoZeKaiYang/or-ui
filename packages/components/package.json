@@ -2,7 +2,7 @@
   "name": "@or-ui/components",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.ts",
   "scripts": {
     "build": "vite build",
     "test": "vitest",
@@ -12,6 +12,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@vitest/coverage-v8": "^1.1.0"
+    "@vitest/coverage-c8": "^0.29.2"
   }
 }

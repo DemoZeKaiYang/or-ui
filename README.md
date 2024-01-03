@@ -121,3 +121,8 @@ Copy code
 ```js
 通过阿里图标给i标签class添加类名
 ```
+
+### 打包问题
+
+项目中引入字体图标库,但是打包出来的 iconfont.css.mjs 是空的
+将 vite 打包忽略 less,通过 gulp 打包字体图标
