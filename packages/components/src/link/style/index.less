@@ -1,0 +1,68 @@
+@import '../../style/common/index.less';
+.or-link {
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &.is-underline {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.or-link.or-link--default {
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    color: @--color-primary;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.or-link--default.is-disabled {
+  &:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: not-allowed;
+  }
+}
+.or-link--default.is-underline {
+  &:hover {
+    color: @--color-primary;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.or-link.or-link--primary {
+  color: (@--color-primary);
+  text-decoration: none;
+}
+
+.or-link.or-link--success {
+  color: (@--color-success);
+  text-decoration: none;
+}
+
+.or-link.or-link--warning {
+  color: (@--color-warning);
+  text-decoration: none;
+}
+
+.or-link.or-link--danger {
+  color: (@--color-danger);
+  text-decoration: none;
+}
+
+.or-link.or-link--info {
+  color: (@--color-info);
+  text-decoration: none;
+}
+.or-link.is-disabled {
+  text-decoration: none;
+  opacity: 0.7;
+  // pointer-events: none; /* 阻止点击事件 */
+  cursor: not-allowed;
+}

@@ -1,7 +1,8 @@
 <template>
-  <div class="ea-icon">Icon1</div>
+  <i :class="'or-icon-' + props.name"></i>
 </template>
 
 <script lang="ts" setup>
-import './style/index.less';
+defineOptions({ name: 'or-icon' })
+const props = defineProps({ name: String })
 </script>

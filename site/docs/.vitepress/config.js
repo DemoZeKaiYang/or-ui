@@ -1,5 +1,5 @@
 export default {
-  title: 'or',
+  title: 'OR-UI',
   base: process.env.NODE_ENV === 'production' ? '/or/' : '/',
   themeConfig: {
     nav: [
@@ -25,11 +25,19 @@ export default {
 
       '/components/': [
         {
-          text: '进阶',
+          text: '基础',
           items: [
             {
-              text: '按钮',
+              text: 'Button按钮',
               link: '/components/button/index'
+            },
+            {
+              text: 'Icon图标',
+              link: '/components/icon/index'
+            },
+            {
+              text: 'Link文字链接',
+              link: '/components/link/index'
             }
           ]
         }
