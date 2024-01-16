@@ -126,3 +126,7 @@ Copy code
 
 项目中引入字体图标库,但是打包出来的 iconfont.css.mjs 是空的
 将 vite 打包忽略 less,通过 gulp 打包字体图标
+
+### 开发 radio 中遇到的问题
+
+vue3 选项式无法获取 this 实例,我们可以通过 getCurrentInstance()获取,像 defineOptions 定义的内容包裹在 ctx.$options 中
