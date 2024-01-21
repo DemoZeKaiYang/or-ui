@@ -1,0 +1,122 @@
+@import '../../style/common/index.less';
+.or-radio {
+  color: #606266;
+  font-weight: 500;
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  outline: none;
+  font-size: 14px;
+  margin-right: 30px;
+}
+.or-radio_input {
+  white-space: nowrap;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+}
+.or-radio_original {
+  opacity: 0;
+  outline: none;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+.or-radio_inner {
+  border: 1px solid #dcdfe6;
+  border-radius: 100%;
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.or-radio_input.is-checked .or-radio_inner {
+  border-color: @--color-primary;
+  background: @--color-primary;
+  &:after {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.or-radio_input.is-disabled .or-radio_inner {
+  background-color: #929292;
+  border-color: #e4e7ed;
+  cursor: not-allowed;
+  &:after {
+    cursor: not-allowed;
+    background-color: #f5f7fa;
+  }
+}
+.or-radio_input.is-disabled.is-checked .or-radio_inner:after {
+  background-color: #c0c4cc;
+}
+
+.or-radio_input.is-disabled + span.or-radio_label {
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+.or-radio_label {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.or-radio_input.is-checked + .or-radio_label {
+  color: @--color-primary;
+}
+
+//边框
+.or-radio.is-bordered {
+  padding: 12px 20px 0 10px;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+  height: 40px;
+}
+
+.or-radio.is-bordered.is-checked {
+  border-color: @--color-primary;
+}
+.or-radio.is-bordered.is-disabled {
+  cursor: not-allowed;
+  border-color: #929292;
+}
+.or-radio--large.is-bordered {
+  padding: 12px 28px 0 10px;
+  border-radius: 5px;
+  height: 40px;
+}
+.or-radio--medium.is-bordered {
+  padding: 10px 20px 0 10px;
+  border-radius: 4px;
+  height: 36px;
+}
+.or-radio--small.is-bordered {
+  padding: 8px 15px 0 10px;
+  border-radius: 3px;
+  height: 32px;
+}
+.or-radio--mini.is-bordered {
+  padding: 6px 15px 0 10px;
+  border-radius: 3px;
+  height: 28px;
+}

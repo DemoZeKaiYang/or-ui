@@ -130,3 +130,11 @@ Copy code
 ### 开发 radio 中遇到的问题
 
 vue3 选项式无法获取 this 实例,我们可以通过 getCurrentInstance()获取,像 defineOptions 定义的内容包裹在 ctx.$options 中
+
+`注意:vue3中的v-model默认绑定的不是value，而是modelValue，接收的方法由input改为@update：modelValue。`
+
+### 开发 radioGroup 的问题
+
+vue2 是通过 this.$vnode.data.tag 去获得标签名类型,这里涉及到 vnode,先直接返回 div 类型在看看后面
+vue3 中不能通过获取 getCurrentInstance()的 ctx 去获取要用 proxy
+<https://blog.csdn.net/qq_39928481/article/details/123943184>
